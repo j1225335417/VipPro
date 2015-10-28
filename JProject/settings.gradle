@@ -1,0 +1,6 @@
+include ':app', ':chatUIDemo', ':appTop', ':customerDemo', ':testHtmlGetLinkMan', ':appddd', ':sweetsheet', ':sample', ':library', ':appDownload'
+include ':amm_sdk_sample'
+include ':wx_pay'
+include ':pushexample'
+include ':androidExcelReader'
+include ':openDor_low_memory'

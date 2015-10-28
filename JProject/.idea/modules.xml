@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/JProject.iml" filepath="$PROJECT_DIR$/JProject.iml" />
+      <module fileurl="file://$PROJECT_DIR$/amm_sdk_sample/amm_sdk_sample.iml" filepath="$PROJECT_DIR$/amm_sdk_sample/amm_sdk_sample.iml" />
+      <module fileurl="file://$PROJECT_DIR$/androidExcelReader/androidExcelReader.iml" filepath="$PROJECT_DIR$/androidExcelReader/androidExcelReader.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/appDownload/appDownload.iml" filepath="$PROJECT_DIR$/appDownload/appDownload.iml" />
+      <module fileurl="file://$PROJECT_DIR$/appTop/appTop.iml" filepath="$PROJECT_DIR$/appTop/appTop.iml" />
+      <module fileurl="file://$PROJECT_DIR$/appddd/appddd.iml" filepath="$PROJECT_DIR$/appddd/appddd.iml" />
+      <module fileurl="file://$PROJECT_DIR$/chatUIDemo/chatUIDemo.iml" filepath="$PROJECT_DIR$/chatUIDemo/chatUIDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/customerDemo/customerDemo.iml" filepath="$PROJECT_DIR$/customerDemo/customerDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/library/library.iml" filepath="$PROJECT_DIR$/library/library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/openDor_low_memory/openDor_low_memory.iml" filepath="$PROJECT_DIR$/openDor_low_memory/openDor_low_memory.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pushexample/pushexample.iml" filepath="$PROJECT_DIR$/pushexample/pushexample.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sample/sample.iml" filepath="$PROJECT_DIR$/sample/sample.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sweetsheet/sweetsheet.iml" filepath="$PROJECT_DIR$/sweetsheet/sweetsheet.iml" />
+      <module fileurl="file://$PROJECT_DIR$/testHtmlGetLinkMan/testHtmlGetLinkMan.iml" filepath="$PROJECT_DIR$/testHtmlGetLinkMan/testHtmlGetLinkMan.iml" />
+      <module fileurl="file://$PROJECT_DIR$/wx_pay/wx_pay.iml" filepath="$PROJECT_DIR$/wx_pay/wx_pay.iml" />
+    </modules>
+  </component>
+</project>

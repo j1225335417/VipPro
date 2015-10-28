@@ -1,0 +1,122 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">  
+ 
+
+
+<HTML>
+<META http-equiv=Content-Type content="text/html; charset=utf-8">
+<SCRIPT >
+
+  function contactlist(jsons){  
+  var table=document.getElementById("contactTable");//获得html中Table  
+  var arr = eval(jsons);//将jsons字符串转换为json对象数组  
+  for(var i=0;i < arr.length;i++){  
+    var jsonObj = arr[i];  
+    var tr = table.insertRow(table.rows.length);//添加tr  
+    var td1 = tr.insertCell(0);//td  
+    var td2 = tr.insertCell(1);  
+    td2.align = "center";  
+    var td3 = tr.insertCell(2);  
+  
+    td1.innerHTML = jsonObj.id;//设置每列对应的值  
+    td2.innerHTML = jsonObj.name;  
+    td3.innerHTML = "<a href=\"window.myjavascript.call('"+jsonObj.phone + "')\">" + jsonObj.phone + "</a>";   
+    }  
+  }  
+  function getAllLinkMan(){
+	  javascript:myjavascript.getAllLinkMan();
+  }
+  function getSimLinkMan(){
+	  var jsons=window.myjavascript.getPhoneLinkMan();
+	 
+	  var table=document.getElementById("contactTable");//获得html中Table  
+	  var arr = eval(jsons);//将jsons字符串转换为json对象数组  
+	  
+	  for(var i=0;i < arr.length;i++){  
+	    var jsonObj = arr[i];  
+	    var tr = table.insertRow(table.rows.length);//添加tr  
+	    var td1 = tr.insertCell(0);//td  
+	    var td2 = tr.insertCell(1);  
+	    td2.align = "center";  
+	    var td3 = tr.insertCell(2);  
+	  
+	    td1.innerHTML = jsonObj.id;//设置每列对应的值  
+	    td2.innerHTML = jsonObj.name;  
+	    td3.innerHTML = "<a href=\"javascript:myjavascript.call('"+jsonObj.phone + "')\">" + jsonObj.phone + "</a>";   
+	    }
+	    alert("获取联系人成功!");
+  }
+  function getLinkMan(){
+	  javascript:myjavascript.getPhoneLinkMan();
+  }
+  function getCamera(){
+	  javascript:myjavascript.getCamera();
+  }
+  function getNext(url,d){
+	  javascript:myjavascript.getNext(url,d,1);
+  }
+  function getSystemSendMsg(){
+	  var phone="5556";
+	  var content="11123123啊啊啊sssssssssssssssssssssssssssssssssssssssssssssssssssss是是是是是是是是是是是是的顶顶ssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa";
+	  javascript:myjavascript.systemSendMsg(phone,content);
+  }
+  function getSendMsg(){
+	  var phone="5556";
+	  var content="123123123啊啊啊asssssssssssssssssssssssssssssssssssssssssssss收拾是是是是是是是是是是是是是是是是是是的顶顶顶顶顶顶顶顶顶顶啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊吾问无为谓吾问无为谓";
+	  javascript:myjavascript.sendMsg(phone,content);
+  }
+  function printInfo(uri){
+	 // alert(uri);
+	 // var arr=uri;
+	 var u=document.getElementById("divuri");
+	 var u2=document.getElementById("img");
+	 u.innerHTML =uri;
+	 u2.src=uri;
+
+  }
+  function testAlert(){
+    alert("测试alert");
+
+  }
+  function testWebView(s){
+    alert(s);
+
+  }
+  function sendAndroid(){
+    myjavascript.androidAlert("html给的参数");
+  }
+  
+</SCRIPT>  
+ <BODY >  
+   <table width="100%" border="0" cellspacing="0" id="contactTable">  
+    <tr>  
+      <td width="20%">编号</td>  
+      <td width="center">name</td>  
+      <td width="30%">phone</td>  
+    </tr>  
+   </table>  
+  <input type="button"  value="获取所有的联系人"  onclick="getAllLinkMan();"/>
+  <input type="button"  value="获取多个的联系人"  onclick="getSimLinkMan();"/>
+  <input type="button"  value="获取sim的联系人"  onclick="getNext('http://www.google.cn','left');"/>
+  <input type="button"  value="调到本地页面" onclick="getNext('file:///android_asset/Stsw.html','left');"/>
+  <input type="button"  value="下一个页面" onclick="getNext('http://www.baidu.com','left');"/>
+  <input type="button"  value="发送短信"  onclick="getSendMsg();"/>
+  <input type="button"  value="短信界面"  onclick="getSystemSendMsg();"/>
+  <input type="button"  value="照相"  onclick="getCamera();"/>
+  <input type="button"  value="测试alert"  onclick="testAlert();"/>
+  <input type="button"  value="传参给android"  onclick="sendAndroid();"/>
+  <input type="file"  value="选择文件" />
+  <!--  <img  src="file:///mnt/sdcard/pintu/20140221_10038.jpg" width="65" height="60">
+   <img  src="file:///sdcard/pintu/20140221_114052.jpg" width="65" height="60">
+   <img  src="content://com.stcyclub.testhtmlgetlinkman/sdcard/pintu/20140221_10038.jpg" width="65" height="60">
+   <img  src="content://com.stcyclub.testhtmlgetlinkman.webview/sdcard/pintu/20140221_10038.jpg" width="65" height="60">
+   <img  src="content://com.stcyclub.testhtmlgetlinkman.MainActivity/sdcard/pintu/20140221_10038.jpg" width="65" height="60">
+   <img  src="file://sdcard/pintu/20140221_10038.jpg" width="65" height="60">
+   <img  src="file:\\sdcard\pintu\20140221_10038.jpg" width="65" height="60">
+   <img  src="file:\\\sdcard\pintu\20140221_10038.jpg" width="65" height="60">
+   <img  src="file:\\\mnt\sdcard\pintu\20140221_10038.jpg" width="65" height="60"> -->
+   <img src="" data-src="holder.js/100%x180" alt="100%x180" style="height:180px;width:100%;display:block;" id="img">
+   <img data-src="holder.js/100%x180" alt="100%x180" style="height: 180px; width: 100%; display: block;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKsAAAC0CAYAAADraNxXAAAEaElEQVR4Xu3YS04UahhFUWgxMYbNmOjT0kACKct6ija2Z92mQTn/t1cqlfv4+vr648F/LhC4wCOsgUomflwAVhAyF4A1k8pQWBnIXADWTCpDYWUgcwFYM6kMhZWBzAVgzaQyFFYGMheANZPKUFgZyFwA1kwqQ2FlIHMBWDOpDIWVgcwFYM2kMhRWBjIXgDWTylBYGchcANZMKkNhZSBzAVgzqQyFlYHMBWDNpDIUVgYyF4A1k8pQWBnIXADWTCpDYWUgcwFYM6kMhZWBzAVgzaQyFFYGMheANZPKUFgZyFwA1kwqQ2FlIHMBWDOpDIWVgcwFYM2kMhRWBjIXgDWTylBYGchcANZMKkNhZSBzAVgzqQyFlYHMBWDNpDIUVgYyF4A1k8pQWBnIXADWTCpDYWUgcwFYM6kMhZWBzAVgzaQyFFYGMheANZPKUFgZyFwA1kwqQ2FlIHMBWDOpDIWVgcwFYM2kMhRWBjIXgDWTylBYGchcANZMKkNhZSBzAVgzqQyFlYHMBWDNpDIUVgYyF4A1k8pQWBnIXADWTCpDYWUgcwFYM6kMhZWBzAVgzaQyFFYGMheANZPKUFgZyFwA1kwqQ6exvry8fAh4fn7+kvD5Z8c0Tv3M4Z/dQunU73v/e8e/89Kee3/nLbsqPzOL9RDIOYjXMN8D55bfdwj3/d8+/v3nsFewfXfnLNZjGKcOee2T8B6s537fJZCw/loF1qOvAZ/nufQpdukT9+np6eHt7e3ryrd8fTj3NQBWWH/7fnrqE/JerJ+fnIdYj//dS8g/f/bwZ2CF9Z9hvfbVAtbvfWv1NeAvfQ3wyfo9iLf87Vmsl/530aVPyGvfL899Z/3T/z11bectkf+Xn5nF+r8EXHoHrEu142+FNR5waT6sS7Xjb4U1HnBpPqxLteNvhTUecGk+rEu142+FNR5waT6sS7Xjb4U1HnBpPqxLteNvhTUecGk+rEu142+FNR5waT6sS7Xjb4U1HnBpPqxLteNvhTUecGk+rEu142+FNR5waT6sS7Xjb4U1HnBpPqxLteNvhTUecGk+rEu142+FNR5waT6sS7Xjb4U1HnBpPqxLteNvhTUecGk+rEu142+FNR5waT6sS7Xjb4U1HnBpPqxLteNvhTUecGk+rEu142+FNR5waT6sS7Xjb4U1HnBpPqxLteNvhTUecGk+rEu142+FNR5waT6sS7Xjb4U1HnBpPqxLteNvhTUecGk+rEu142+FNR5waT6sS7Xjb4U1HnBpPqxLteNvhTUecGk+rEu142+FNR5waT6sS7Xjb4U1HnBpPqxLteNvhTUecGk+rEu142+FNR5waT6sS7Xjb4U1HnBpPqxLteNvhTUecGk+rEu142+FNR5waT6sS7Xjb4U1HnBpPqxLteNvhTUecGk+rEu142+FNR5waT6sS7Xjb4U1HnBpPqxLteNvhTUecGk+rEu142+FNR5waT6sS7Xjb4U1HnBpPqxLteNvhTUecGk+rEu142/9CRINeTax7S6yAAAAAElFTkSuQmCC">
+  <div id="divuri"></div>
+  
+ </BODY>  
+</HTML>  

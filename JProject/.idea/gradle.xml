@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="distributionType" value="LOCAL" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="gradleHome" value="C:\tools\android-studio\gradle\gradle-2.4" />
+        <option name="gradleJvm" value="1.8" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/amm_sdk_sample" />
+            <option value="$PROJECT_DIR$/androidExcelReader" />
+            <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/appDownload" />
+            <option value="$PROJECT_DIR$/appTop" />
+            <option value="$PROJECT_DIR$/appddd" />
+            <option value="$PROJECT_DIR$/chatUIDemo" />
+            <option value="$PROJECT_DIR$/customerDemo" />
+            <option value="$PROJECT_DIR$/library" />
+            <option value="$PROJECT_DIR$/openDor_low_memory" />
+            <option value="$PROJECT_DIR$/pushexample" />
+            <option value="$PROJECT_DIR$/sample" />
+            <option value="$PROJECT_DIR$/sweetsheet" />
+            <option value="$PROJECT_DIR$/testHtmlGetLinkMan" />
+            <option value="$PROJECT_DIR$/wx_pay" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

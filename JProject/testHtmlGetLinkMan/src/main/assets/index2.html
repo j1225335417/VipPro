@@ -1,0 +1,46 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">  
+ 
+
+<HTML>
+<META http-equiv=Content-Type content="text/html; charset=utf-8"><LINK 
+href="css/style_cn.css" type=text/css rel=stylesheet>
+<SCRIPT language=JavaScript>
+
+  function contactlist(jsons){  
+  var table=document.getElementById("contactTable");//获得html中Table  
+  var arr = eval(jsons);//将jsons字符串转换为json对象数组  
+  for(var i=0;i < arr.length;i++){  
+    var jsonObj = arr[i];  
+    var tr = table.insertRow(table.rows.length);//添加tr  
+    var td1 = tr.insertCell(0);//td  
+    var td2 = tr.insertCell(1);  
+    td2.align = "center";  
+    var td3 = tr.insertCell(2);  
+  
+    td1.innerHTML = jsonObj.id;//设置每列对应的值  
+    td2.innerHTML = jsonObj.name;  
+    td3.innerHTML = "<a href=\"javascript:myjavascript.call('"+jsonObj.phone + "')\">" + jsonObj.phone + "</a>";   
+    }  
+  }  
+  function getAllLinkMan(){
+	  javascript:myjavascript.getAllLinkMan();
+  }
+  function getSimLinkMan(){
+	  javascript:myjavascript.getSimLinkMan();
+  }
+  function getNext(url,d){
+	  javascript:myjavascript.getNext(url,d,1);
+  }
+   
+</SCRIPT>  
+ <BODY >  
+   <table width="100%" border="0" cellspacing="0" id="contactTable">  
+    <tr>  
+      <td width="20%">编号</td>  
+      <td width="center">name</td>  
+      <td width="30%">phone</td>  
+    </tr>  
+   </table>  
+  <input type="button"  value="获取所有的联系人"  onclick="getNext('http://www.baidu.com','left');"/>
+ </BODY>  
+</HTML>  
