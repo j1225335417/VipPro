@@ -16,7 +16,7 @@ package com.easemob.applib.utils;
 import android.content.Context;
 import android.content.SharedPreferences;
 
-public class HXPreferenceUtils {//fdfdf
+public class HXPreferenceUtils {//fdfdf111111111111111
 	/**
 	 * 保存Preference的name
 	 */
