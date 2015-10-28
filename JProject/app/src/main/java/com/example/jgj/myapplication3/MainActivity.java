@@ -16,7 +16,7 @@ import android.widget.Toast;
 import java.util.ArrayList;
 
 
-public class MainActivity extends Activity {
+public class MainActivity extends Activity { //
     EditText ed;
     Button bt;
     ListView parent_listview;
